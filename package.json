@@ -7,9 +7,12 @@
         "typescript": "^5.8.3"
     },
     "scripts": {
-        "clean": "del /s /q build",
+        "clean": "yarn run rimraf build",
         "build": "yarn run tsc --build",
         "start": "yarn run clean && yarn run build && node build/index.js",
         "startNoClean": "yarn run build && node build/index.js"
+    },
+    "devDependencies": {
+        "rimraf": "^6.0.1"
     }
 }
