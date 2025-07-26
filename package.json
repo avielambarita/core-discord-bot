@@ -1,0 +1,15 @@
+{
+    "name": "core-discord-bot",
+    "packageManager": "yarn@4.6.0",
+    "dependencies": {
+        "discord.js": "^14.21.0",
+        "dotenv": "^17.2.1",
+        "typescript": "^5.8.3"
+    },
+    "scripts": {
+        "clean": "del /s /q build",
+        "build": "yarn run tsc --build",
+        "start": "yarn run clean && yarn run build && node build/index.js",
+        "startNoClean": "yarn run build && node build/index.js"
+    }
+}
