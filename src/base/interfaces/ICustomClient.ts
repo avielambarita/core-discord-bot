@@ -8,6 +8,7 @@ export default interface ICustomClient {
     commands: Collection<string, Command>;
     subcommands: Collection<string, Subcommand>;
     cooldowns: Collection<string, Collection<string, number>>;
+    developmentMode: boolean;
 
     Init(): void;
     LoadHandler(): void;

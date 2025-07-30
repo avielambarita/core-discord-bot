@@ -17,7 +17,8 @@ export default class Ping extends Command {
                 PermissionsBitField.Flags.UseApplicationCommands,
             dm_permission: false,
             cooldown: 3,
-            options: []
+            options: [],
+            developer: false
         });
     }
 
