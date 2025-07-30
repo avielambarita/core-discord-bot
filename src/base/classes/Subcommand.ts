@@ -12,7 +12,5 @@ export default class Subcommand implements ISubcommand {
         this.name = options.name;
     }
 
-    Execute(interaction: ChatInputCommandInteraction): void {
-        throw new Error("Method not implemented.");
-    }
+    Execute(interaction: ChatInputCommandInteraction): void {}
 }
